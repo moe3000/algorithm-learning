@@ -1,5 +1,6 @@
 import common.ListNode;
 import feb.AddTwoNumbers;
+import feb.BinarySearch;
 import feb.ReverserInteger;
 import org.junit.Assert;
 import org.junit.Test;
@@ -46,6 +47,16 @@ public class JavaAlgorithmTest {
             System.out.println(node.val);
             node = node.next;
         }
+    }
+
+    @Test
+    public void testBinarySearch() {
+
+        int[] array = new int[]{1 ,3 ,5 ,76 , 76, 99};
+
+        System.out.println(BinarySearch.binarySearch(array, 76));
+
+
     }
 
 }
